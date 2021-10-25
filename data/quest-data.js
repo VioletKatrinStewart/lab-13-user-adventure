@@ -51,11 +51,20 @@ const graveyard = {
         result: `You convince the kids who started the bet to let you bring Randy with you and if you both explore the whole graveyard and make it back alive you get to split all the candy. You and Randy enter through the front gate and both give eachother a knowing look confirming you are both very scared and not entirely sure if this is worth it. Weirdly enough, everytime I shadow or noise startles one of you it makes the other erupt into a fit of nervous laughter. After this happens a few times you both are genuinely laughing. The graveyard stops being scary and you both have a great time trying to scare the other on to get a laugh. When you get back to the gate the other kids CAN NOT believe it. You get to walk away with a pile of their candy and a great story. Minus one HP and plus TEN candy bars.`,
         hp: -1,
         candy: 10,
-    }, {
+    }, { 
+        id: 'just be brave',
+        description: 'Time to put on a brave face! Walk in confidently by yourself.',
+        result: `You decide that the promise of at least 20 candy bars is too good to pass up. You tell the group you will be going in alone. They are all shocked at how brave you are. You strut into the graveyard and see long shadows, darting grows, and spooky looking trees everywhere. To distract yourself from how SCARY this is, you start whistling to yourself. HOWEVER the noise attracts SOMETHING and now they are heading RIGHT TOWARDS YOU. You scream!!!! And you start to run away. You feel a hand grab the back of your shoulder when you are in sight of the gate. All the kids who had bet their candy run away faster than you can say "trick-or-treat!'. You turn around ready to accept your fate. But theres no ghost! Just the groundskeeper who gives you a FIRM warning not to be caught tresspassing again. He talks your ear off for so long you end up Losing a lot of precious time you could be out getting candy. Minus two HP and plus ZERO candy.`
 
     }]
 
 };
+
+const quests = [
+    houses,
+    graveyard,
+    party, 
+];
 
 
 
