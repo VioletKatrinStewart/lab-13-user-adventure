@@ -4,7 +4,7 @@ export function generateUser(formData){
         candy: 0,
         hp: 3,
         name: formData.get('name'),
-        race: formData.get('costume'),
+        costume: formData.get('costume'),
     };
 }
 

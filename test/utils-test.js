@@ -1,4 +1,4 @@
-import { generateUser, setUser } from '../utils.js';
+import { generateUser, setUser } from '../utils/utils.js';
 
 const test = QUnit.test;
 
@@ -29,7 +29,7 @@ test('setUser should save user to localStorage', (expect)=>{
         candy: 0,
         hp: 3,
         name: 'Violet',
-        race: 'vampire',
+        costume: 'vampire',
     };
 
     setUser(userObject);
