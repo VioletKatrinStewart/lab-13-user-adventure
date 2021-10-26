@@ -10,3 +10,4 @@ userForm.addEventListener('submit', (e)=>{
     const userObj = generateUser(formData);
     setUser(userObj);
     window.location.replace('./map');
+});

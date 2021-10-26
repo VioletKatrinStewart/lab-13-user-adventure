@@ -15,6 +15,33 @@
 </head>
 
 <body>
+    <form id="user-form">
+        <label for="name">
+            Your Adventurer Name:
+            <input name="name" type="text">
+        </label>
+        <legend>Pick Your Costume:</legend>
+        <p id="avatars">
+            <label>
+                <input type="radio" name="costume" required value="ghost">
+                <img src="assets/ghost.jpg">
+                Ghost
+            </label>
+            <label>
+                <input type="radio" name="costume" required value="vampire">
+                <img src="assets/vampire.png">
+                Vampire
+            </label>
+            <label>
+                <input type="radio" name="costume" required value="pumpkin">
+                <img src="assets/pumpkin.png">
+                Pumpkin
+            </label>
+            </p> 
+            <p> It's your first halloween where you get to spend some time trick-or-treating without your parents! Pick a constume and let the spooky adventures begin. You only get 30 minutes unsupervised so make good choices to maximize the amount of candy you'll be going home with!</p>
+
+            <button>Start Your Adventure!</button>
+        </form>
     
 
     <script type="module" src="./app.js"></script>
