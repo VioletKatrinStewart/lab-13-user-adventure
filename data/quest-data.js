@@ -69,7 +69,7 @@ const party = {
     },
     image: 'party.jpg',
     description: `You run into your friend Stephanie and she lets you know that just a few houses over her family is hosting a Halloween party! She says a lot of your friends will be there and EVERYONE will get the as much candy as they want. You decide to follow her to the door and go in with her. When you walk in there are three directions you can go. Where do you decide to go first?`,
-    Choices: [{ id: 'left',
+    choices: [{ id: 'left',
         description: 'You decide to head to the left',
         result: `You head to the left and inside everyone is lined up in a row while the adults walk around and fawn over the children. You realize there is a costume contest going on. You get in line and hope for the best. Once you are in line you catch the eye of the moms. They LOVE your costume and think you are cute as pie. You get a prize which is a bucket of 20 candy bars!!!!! Wow oh wow! Minus one HP plus twenty candy!`,
         hp: -1,
