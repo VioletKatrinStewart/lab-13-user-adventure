@@ -1,8 +1,10 @@
 import quests from '../data/quest-data.js';
-import { findById, scoreQuest, getUser, setUser } from '../utils/utils.js';
+import { findById, scoreQuest, getUser, setUser, loadProfile } from '../utils/utils.js';
 
 const params = new URLSearchParams(window.location.search);
 const questData = findById(quests, params.get('id'));
+
+loadProfile();
 
 const title = document.getElementById('quest-title');
 title.textContent = questData.title;
@@ -36,16 +38,16 @@ questChoices.addEventListener('submit', (e)=>{
     e.preventDefault();
     const selectedRadio = document.querySelector('input[type="radio"]:checked');
     const choice = findById(questData.choices, selectedRadio.value);
-    console.log(choice);
+    //console.log(choice);
     const user = getUser();
-    console.log(user);
+    //console.log(user);
     scoreQuest(choice, questData.id, user);
     setUser(user);
     const questDetails = document.getElementById('quest-details');
     questDetails.classList.add('hidden');
     //console.log(questDetails);
     const questResults = document.getElementById('results');
-    console.log(questResults);
+    //console.log(questResults);
     questResults.classList.add('hidden');
     const resultP = document.createElement('p');
     resultP.textContent = choice.result;
@@ -56,4 +58,6 @@ questChoices.addEventListener('submit', (e)=>{
     questResults.append(resultP, backLink);
 
     questResults.classList.remove('hidden');
+
+    loadProfile();
 });

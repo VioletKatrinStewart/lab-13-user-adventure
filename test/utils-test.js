@@ -42,10 +42,10 @@ test('getUser should return the user object from localStorage', (expect)=>{
     // arrange
     const userObject = { 
         completed: {},
-        gold: 0,
-        hp: 35,
-        name: 'julie',
-        race: 'cleric',
+        candy: 0,
+        hp: 3,
+        name: 'Violet',
+        costume: 'vampire',
     };
 
     setUser(userObject);

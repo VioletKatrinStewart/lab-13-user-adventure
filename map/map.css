@@ -1,4 +1,15 @@
 #map-links {
     display: flex;
     flex-direction: column;
+    background-image: url("../assets/map.png");
+    width: 90vw;
+    height: calc(90vw * 642 / 900);
+    position: relative;
+    }
+
+.quest {
+position: absolute;
+background-color: white;
+padding: 5px;
+border-radius: 5px;
 }

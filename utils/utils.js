@@ -30,6 +30,20 @@ export function getUser(){
 
 export function scoreQuest(choiceObject, questId, userObject){
     userObject.hp += choiceObject.hp;
-    userObject.gold += choiceObject.gold;
+    userObject.candy += choiceObject.candy;
     userObject.completed[questId] = true;
 }
+
+export function loadProfile(){
+    // grab the user info from local storage
+    const user = getUser();
+    // update the DOM with the user info
+    const img = document.getElementById('user-image');
+    img.src = `../assets/${user.costume}.png`;
+    const name = document.getElementById('user-name');
+    name.textContent = user.name;
+    const candy = document.getElementById('user-candy');
+    candy.textContent = user.candy;
+    const hp = document.getElementById('user-hp');
+    hp.textContent = user.hp;
+} 
