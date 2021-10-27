@@ -89,7 +89,7 @@ const party = {
     }]
 };
 
-const quests = [
+export const quests = [
     houses,
     graveyard,
     party, 

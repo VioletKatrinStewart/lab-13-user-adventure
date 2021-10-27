@@ -21,3 +21,9 @@ export function findById(items, id) {
         }
     }
 }
+
+
+export function getUser(){
+    const userString = localStorage.getItem('USER');
+    return JSON.parse(userString);
+}
