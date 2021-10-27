@@ -38,11 +38,15 @@ questChoices.addEventListener('submit', (e)=>{
     const choice = findById(questData.choices, selectedRadio.value);
     console.log(choice);
     const user = getUser();
+    console.log(user);
     scoreQuest(choice, questData.id, user);
     setUser(user);
     const questDetails = document.getElementById('quest-details');
     questDetails.classList.add('hidden');
+    //console.log(questDetails);
     const questResults = document.getElementById('results');
+    console.log(questResults);
+    questResults.classList.add('hidden');
     const resultP = document.createElement('p');
     resultP.textContent = choice.result;
     const backLink = document.createElement('a');
