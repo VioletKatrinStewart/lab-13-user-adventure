@@ -60,6 +60,35 @@ const graveyard = {
 
 };
 
+const party = {
+    id: 'party',
+    title: 'Halloween Party',
+    map: {
+        top: '30%',
+        left: '90%'
+    },
+    image: 'party.webp',
+    description: `You run into your friend Stephanie and she lets you know that just a few houses over her family is hosting a Halloween party! She says a lot of your friends will be there and EVERYONE will get the as much candy as they want. You decide to follow her to the door and go in with her. When you walk in there are three directions you can go. Where do you decide to go first?`,
+    Choices: [{ id: 'left',
+        description: 'You decide to head to the left',
+        result: `You head to the left and inside everyone is lined up in a row while the adults walk around and fawn over the children. You realize there is a costume contest going on. You get in line and hope for the best. Once you are in line you catch the eye of the moms. They LOVE your costume and think you are cute as pie. You get a prize which is a bucket of 20 candy bars!!!!! Wow oh wow! Minus one HP plus twenty candy!`,
+        hp: -1,
+        candy: 20,
+    }, { 
+        id: 'right',
+        description: 'You decide to head to the right',
+        result: `You head to the right, and see a long line. Thinking that waiting in this line MUST be for something good you decide to hop in. After a really long wait you get to the front and see the line wasn't for candy, it was for pizza. You take a slice but now are out of time and have to leave. You see a bowl of candy at the front door and try to grab a handful but are scolded by an adult who says you can only take ONE piece. Rats! Minus two HP plus one candy.`,
+        hp: -2,
+        candy: 1,
+
+    }, {
+        id: 'straight',
+        description: 'You decide to go down the middle',
+        result: `You go down the middle hallway. You decide to look for the bag that has all the candy they bought for the night and make off with it. You see a cubbord that looks suspiciously like it would have candy in it, but you can not quite reach the top. You start stacking furnature at the base of the cubbord to try and give you something to stand on to reach the top. But, IT ALL TOPPLES OVER UNDER YOUR WEIGHT! There is a loud CRASH and all the adults come out to see you. You are yelled at and banned from coming over again. You must leave without any candy. Minus one HP and plus zero candy.`
+
+    }]
+};
+
 const quests = [
     houses,
     graveyard,

@@ -1,1 +1,1 @@
-console.log('hello from quest detail'); 
+//console.log('hello from quest detail'); 
