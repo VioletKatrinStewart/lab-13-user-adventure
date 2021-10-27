@@ -8,7 +8,7 @@ loadProfile();
 
 const title = document.getElementById('quest-title');
 title.textContent = questData.title;
-const img = document.querySelector('img');
+const img = document.getElementById('quest-image');
 //console.log(img);
 img.src = `../assets/${questData.image}`;
 //console.log(questData.image);

@@ -1,3 +1,17 @@
 .hidden {
 display: none;
 }
+
+* {
+    font-family: 'Press Start 2P', cursive;
+    color: rgb(117, 49, 4);
+}
+
+p {
+    background-color: peachpuff;
+}
+
+.quest-image {
+    height: 300px;
+    width: 400px;
+}
