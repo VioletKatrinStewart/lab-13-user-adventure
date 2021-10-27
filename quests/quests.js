@@ -6,8 +6,10 @@ const questData = findById(quests, params.get('id'));
 
 const title = document.getElementById('quest-title');
 title.textContent = questData.title;
-const img = document.getElementById('quest-image');
-img.src = `../assets/quests/${questData.image}`;
+const img = document.querySelector('img');
+//console.log(img);
+img.src = `../assets/${questData.image}`;
+//console.log(questData.image);
 const description = document.getElementById('quest-description');
 description.textContent = questData.description;
 const questChoices = document.getElementById('quest-choices');

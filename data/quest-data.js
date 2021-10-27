@@ -67,7 +67,7 @@ const party = {
         top: '30%',
         left: '90%'
     },
-    image: 'party.webp',
+    image: 'party.jpg',
     description: `You run into your friend Stephanie and she lets you know that just a few houses over her family is hosting a Halloween party! She says a lot of your friends will be there and EVERYONE will get the as much candy as they want. You decide to follow her to the door and go in with her. When you walk in there are three directions you can go. Where do you decide to go first?`,
     Choices: [{ id: 'left',
         description: 'You decide to head to the left',
@@ -89,11 +89,13 @@ const party = {
     }]
 };
 
-export const quests = [
+const quests = [
     houses,
     graveyard,
     party, 
 ];
+
+export default quests;
 
 
 
