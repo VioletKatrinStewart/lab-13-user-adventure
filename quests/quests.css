@@ -5,13 +5,38 @@ display: none;
 * {
     font-family: 'Press Start 2P', cursive;
     color: rgb(117, 49, 4);
-}
 
-p {
-    background-color: peachpuff;
 }
 
 .quest-image {
     height: 300px;
     width: 400px;
 }
+
+#quest-choices {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+}
+
+#quest-details {
+    background-color: black;
+}
+
+#quest-description {
+    background-color: sandybrown;
+}
+
+button {
+    width: 200px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../assets/quests.jpg);
+}
+
+ 
