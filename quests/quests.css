@@ -29,6 +29,10 @@ display: none;
     background-color: sandybrown;
 }
 
+#results {
+    background-color: sandybrown;
+}
+
 button {
     width: 200px;
 }
