@@ -18,6 +18,10 @@ header {
     background-color: rgb(236, 183, 84);
 }
 
+body {
+    background-color: black;
+}
+
 * {
     font-family: 'Press Start 2P', cursive;
     color: rgb(117, 49, 4);

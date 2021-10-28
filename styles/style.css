@@ -19,6 +19,7 @@
 
 #avatars input[type=radio] {
     display: none;
+    
 }
 
 input[type=radio]:checked + img {
@@ -30,6 +31,7 @@ input[type=radio]:checked + img {
 img {
     height: 200px;
     width: 200px;
+    border-radius: 50%;
 }
 
 * {
@@ -44,3 +46,8 @@ button {
 header {
     background-color: sandybrown
 }
+
+body {
+    background-color: black;
+}
+
