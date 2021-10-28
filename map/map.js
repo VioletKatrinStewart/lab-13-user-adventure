@@ -1,8 +1,14 @@
 import quests from '../data/quest-data.js';
-import { getUser, loadProfile } from '../utils/utils.js';
+import { getUser, loadProfile, hasCompletedAllQuests } from '../utils/utils.js';
+
 const mapLinks = document.getElementById('map-links');
 const user = getUser();
+
+if (user.hp <= 0 || hasCompletedAllQuests(user)){
+    window.location.replace('../gameover');
+}
 loadProfile();
+
 for (let quest of quests){
     if (user.completed[quest.id]){
         displaySpan(quest);
