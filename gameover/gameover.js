@@ -4,7 +4,7 @@ import { lowCandy, mediumCandy, highCandy } from '../data/gameover-data.js';
 loadProfile();
 
 const user = getUser();
-const endResult = (candyScore(user.candy))
+const endResult = (candyScore(user.candy));
 //console.log(user);
 
 const timeResult = document.getElementById('time-result');

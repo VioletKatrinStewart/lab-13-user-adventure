@@ -16,7 +16,7 @@ const houses = {
     }, {
         id: 'red',
         description: 'The red house',
-        result: `You make your way to the red house. You are excited becasue there are no other kids competing for candy. You practically leap up the stairs and knock on the door. OH NO! The house seems to be full of TEENAGERS. They laugh at your costume and tell you firmly to hand over all your candy. You also burn some precious time composing yourself after parting with your candy stash. TRULY UNFAIR! RATS! Minus one HP and you lose any candy you have gained so far.`,
+        result: `You make your way to the red house. You are excited becasue there are no other kids competing for candy. You practically leap up the stairs and knock on the door. OH NO! The house seems to be full of TEENAGERS. They laugh at your costume. How rude! You also burn some precious time composing yourself afterwards. TRULY UNFAIR! RATS! Minus one HP and you gain zero candy.`,
         hp: -1,
         candy: 0,
     }, {
@@ -42,9 +42,9 @@ const graveyard = {
     choices: [{
         id: 'run',
         description: 'Run at full speed through the graveyard to save time and make it less scary.',
-        result: `You BOLT into the graveyard with a gaggle of kids cheering you on from the fence. You feel the addrenaline propelling your body through. However it is a little to dark for you to see the gnarled tree roots extrending into the walkway. You trip! ALL OF YOUR CANDY FALLS ON THE GROUND! You are too afraid to register if you just tripped over roots or if those are actually zombie hands popping out of the ground. You run back to the fance leaving YOUR WHOLE CANDY STASH all behind. Minus one HP and you lose any candy you have gained so far.`,
+        result: `You BOLT into the graveyard with a gaggle of kids cheering you on from the fence. You feel the addrenaline propelling your body through. However it is a little to dark for you to see the gnarled tree roots extrending into the walkway. You trip! You are too afraid to register if you just tripped over roots or if those are actually zombie hands popping out of the ground. You run back to the fence and all the other kids laugh at you. Minus one HP plus zero candy.`,
         hp: -1,
-        candy: 0,  //RESET TO ZERO 
+        candy: 0,  
     }, {
         id: 'buddy system',
         description: 'Go with Randy and split the candy.',
@@ -54,7 +54,9 @@ const graveyard = {
     }, { 
         id: 'just be brave',
         description: 'Time to put on a brave face! Walk in confidently by yourself.',
-        result: `You decide that the promise of at least 20 candy bars is too good to pass up. You tell the group you will be going in alone. They are all shocked at how brave you are. You strut into the graveyard and see long shadows, darting grows, and spooky looking trees everywhere. To distract yourself from how SCARY this is, you start whistling to yourself. HOWEVER the noise attracts SOMETHING and now they are heading RIGHT TOWARDS YOU. You scream!!!! And you start to run away. You feel a hand grab the back of your shoulder when you are in sight of the gate. All the kids who had bet their candy run away faster than you can say "trick-or-treat!'. You turn around ready to accept your fate. But theres no ghost! Just the groundskeeper who gives you a FIRM warning not to be caught tresspassing again. He talks your ear off for so long you end up Losing a lot of precious time you could be out getting candy. Minus two HP and plus ZERO candy.`
+        result: `You decide that the promise of at least 20 candy bars is too good to pass up. You tell the group you will be going in alone. They are all shocked at how brave you are. You strut into the graveyard and see long shadows, darting grows, and spooky looking trees everywhere. To distract yourself from how SCARY this is, you start whistling to yourself. HOWEVER the noise attracts SOMETHING and now they are heading RIGHT TOWARDS YOU. You scream!!!! And you start to run away. You feel a hand grab the back of your shoulder when you are in sight of the gate. All the kids who had bet their candy run away faster than you can say "trick-or-treat!'. You turn around ready to accept your fate. But theres no ghost! Just the groundskeeper who gives you a FIRM warning not to be caught tresspassing again. He talks your ear off for so long you end up Losing a lot of precious time you could be out getting candy. Minus two HP and plus ZERO candy.`,
+        hp: -2,
+        candy: 0
 
     }]
 
