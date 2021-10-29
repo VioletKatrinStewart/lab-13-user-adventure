@@ -58,3 +58,15 @@ export function hasCompletedAllQuests(userObject){
     }
     return true;
 }
+
+export function candyScore(candy) {
+    if (candy <= 5) {
+        return 'lowCandy';   
+    }
+    else if (candy <= 10) {
+        return 'mediumCandy';   
+    }
+    return 'highCandy';
+}
+
+export default candyScore; 
