@@ -4,22 +4,19 @@ import { lowCandy, mediumCandy, highCandy } from '../data/gameover-data.js';
 loadProfile();
 
 const user = getUser();
-console.log(user);
+const endResult = (candyScore(user.candy))
+//console.log(user);
 
 const timeResult = document.getElementById('time-result');
 const candyResult = document.getElementById('candy-result');
 
-if (candyScore(user.candy) === 'lowCandy') {
+if (endResult === 'lowCandy') {
     timeResult.textContent = lowCandy.time;
     candyResult.textContent = lowCandy.candy;
-}
-
-if (candyScore(user.candy) === 'mediumCandy') {
+} else if (endResult === 'mediumCandy') {
     timeResult.textContent = mediumCandy.time;
     candyResult.textContent = mediumCandy.candy;
-}
-
-if (candyScore(user.candy) === 'highCandy') {
+} else {
     timeResult.textContent = highCandy.time;
     candyResult.textContent = highCandy.candy;
 }

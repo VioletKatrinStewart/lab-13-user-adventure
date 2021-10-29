@@ -10,19 +10,19 @@ const houses = {
     choices:[{
         id: 'blue',
         description:'The blue house',
-        results: `You head over to the blue house. There are so many kids in line you burn a signifigant amount of the time you have before your curfew waiting. Eventually you get to the front only to find out they are handing out BOXES OF RAISENS!?!! You take a box and continue on with the weight of much dissapointment weighing on you. You lose two HP and you gain zero candy.`,
+        result: `You head over to the blue house. There are so many kids in line you burn a signifigant amount of the time you have before your curfew waiting. Eventually you get to the front only to find out they are handing out BOXES OF RAISENS!?!! You take a box and continue on with the weight of much dissapointment weighing on you. You lose two HP and you gain zero candy.`,
         hp: -2,
         candy: 0,
     }, {
         id: 'red',
         description: 'The red house',
-        results: `You make your way to the red house. You are excited becasue there are no other kids competing for candy. You practically leap up the stairs and knock on the door. OH NO! The house seems to be full of TEENAGERS. They laugh at your costume and tell you firmly to hand over all your candy. You also burn some precious time composing yourself after parting with your candy stash. TRULY UNFAIR! RATS! Minus one HP and you lose any candy you have gained so far.`,
+        result: `You make your way to the red house. You are excited becasue there are no other kids competing for candy. You practically leap up the stairs and knock on the door. OH NO! The house seems to be full of TEENAGERS. They laugh at your costume and tell you firmly to hand over all your candy. You also burn some precious time composing yourself after parting with your candy stash. TRULY UNFAIR! RATS! Minus one HP and you lose any candy you have gained so far.`,
         hp: -1,
-        candy: 0, //RESET TOTAL AMOUNT TO ZERO NOT AN INCRIMENT OF ZERO
+        candy: 0,
     }, {
         id: 'brown',
         description: 'The brown house',
-        results: `You cautiously approach the brown house. You feel your heartbeat getting faster as you make your way to the door. After you knock you think about booking it back down the street in the direction you came from but right before you can turn around the door slowly creaks open. An old woman's face peers around the door and with a big toothless grin she says "hello dearie...". You make a small squeaking noise but to your surpise she extends not one but THREE KING SIZED CANDY BARS. HOLY MOLY! Becase there were no other kids getting in your way you don't lose too much time either! Minus zero HP and plus three candy bars.`,
+        result: `You cautiously approach the brown house. You feel your heartbeat getting faster as you make your way to the door. After you knock you think about booking it back down the street in the direction you came from but right before you can turn around the door slowly creaks open. An old woman's face peers around the door and with a big toothless grin she says "hello dearie...". You make a small squeaking noise but to your surpise she extends not one but THREE KING SIZED CANDY BARS. HOLY MOLY! Becase there were no other kids getting in your way you don't lose too much time either! Minus zero HP and plus three candy bars.`,
         hp: -1,
         candy: 3
 
@@ -84,7 +84,9 @@ const party = {
     }, {
         id: 'straight',
         description: 'You decide to go down the middle',
-        result: `You go down the middle hallway. You decide to look for the bag that has all the candy they bought for the night and make off with it. You see a cubbord that looks suspiciously like it would have candy in it, but you can not quite reach the top. You start stacking furnature at the base of the cubbord to try and give you something to stand on to reach the top. But, IT ALL TOPPLES OVER UNDER YOUR WEIGHT! There is a loud CRASH and all the adults come out to see you. You are yelled at and banned from coming over again. You must leave without any candy. Minus one HP and plus zero candy.`
+        result: `You go down the middle hallway. You decide to look for the bag that has all the candy they bought for the night and make off with it. You see a cubbord that looks suspiciously like it would have candy in it, but you can not quite reach the top. You start stacking furnature at the base of the cubbord to try and give you something to stand on to reach the top. But, IT ALL TOPPLES OVER UNDER YOUR WEIGHT! There is a loud CRASH and all the adults come out to see you. You are yelled at and banned from coming over again. You must leave without any candy. Minus one HP and plus zero candy.`,
+        hp: -1,
+        candy: 0
 
     }]
 };

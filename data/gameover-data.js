@@ -1,5 +1,5 @@
 export const lowCandy = {
-    time: 'You ran out of time and had to go back home to your parents! I hope you had a fun night out trick-or-treating, even though you did not end with too much candy.',
+    time: 'You ran out of time and had to go back home to your parents! I hope you had a fun night out trick-or-treating.',
     candy: 'A rats! You finished with barely any candy! Better luck next year!'
 };
 

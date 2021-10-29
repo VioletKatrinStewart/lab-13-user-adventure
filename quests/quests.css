@@ -42,9 +42,12 @@ section {
     flex-direction: column;
     align-items: center;
     background-image: url(../assets/quest-2.webp);
+    
 }
 
 #quest-title {
     background-color: sandybrown;
 }
+
+
  

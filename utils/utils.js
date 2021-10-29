@@ -63,7 +63,7 @@ export function candyScore(candy) {
     if (candy <= 5) {
         return 'lowCandy';   
     }
-    else if (candy <= 10) {
+    else if (candy <= 15) {
         return 'mediumCandy';   
     }
     return 'highCandy';
